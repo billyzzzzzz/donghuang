@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>东皇土产 | 高端滋补品牌</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Serif SC', serif;
+      background-color: #f9f6f1; /* 米色背景 */
+      color: #001;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #fffaf4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #8b5e3c;
+    }
+
+    nav a {
+      margin-left: 30px;
+      font-size: 1em;
+      color: #5b4b3a;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #c4a484;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1590080876261-9d3be6cbf66b?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      max-width: 80%;
+      background: rgba(0,0,0,0.4);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #8b5e3c;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      color: #5b4b3a;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #eee2d1;
+      border-radius: 16px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0;
+      font-size: 1.1em;
+      color: #6b4b30;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 1em;
+      color: #5b4b3a;
+    }
+
+    footer {
+      background-color: #efe5d8;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>东皇土产</h1>
+    <nav>
+      <a href="#about">关于我们</a>
+      <a href="#products">产品展示</a>
+      <a href="#contact">联系方式</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>东方精粹 · 自然之选<br>—— 高端滋补品，健康生活的守护者</h2>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">关于我们</h2>
+    <p>东皇土产，源于东方古法，精选天然人参及道地药材，传承养生智慧，致力于为现代人带来真正安全、温和、有效的滋补体验。</p>
+  </section>
+
+<section id="products">
+  <h2 class="section-title">产品展示</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://cansiv.github.io/hogandan/05.IMG_DWH_PRODUCT/16.CIJB_300G.PNG" alt="高丽太极人参精" />
+      <h3>高丽太极人参精</h3>
+      <p>萃取精华，温和滋补，提升活力。</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://cansiv.github.io/hogandan/05.IMG_DWH_PRODUCT/06.TGIJ.jpg" 
+      alt="红参切片" />
+      <h3>红参切片</h3>
+      <p>可泡水或含服，方便食用。</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://cansiv.github.io/hogandan/05.IMG_DWH_PRODUCT/14.JS.jpg" />
+      <h3>人参蜜丸</h3>
+      <p>古法手作，口感香甜，滋补养颜。</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">联系方式</h2>
+    <p>📧 邮箱：info@donghuang.com</p>
+    <p>📱 微信：donghuang_official</p>
+    <p>🏢 地址：韩国首尔市江南区人参街88号</p>
+  </section>
+
+  <footer>
+    © 2025 东皇土产 | 保留所有权利
+  </footer>
+</body>
+</html>
